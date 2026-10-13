@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+        name="description"
+        content="نگاهی به آموزش زنان، قدرت، خودمختاری و جامعه در افغانستان."
+    >
+    <title>فصل ناتمام آموختن</title>
+
+    <style>
+        :root {
+            --background: #1b120e;
+            --surface: #281b15;
+            --surface-light: #34241b;
+            --cream: #f2e7d5;
+            --muted: #d0bea6;
+            --copper: #bd8961;
+            --line: #5a4231;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            color: var(--cream);
+            background:
+                radial-gradient(ellipse at 50% 0, #38261b 0, transparent 42%),
+                var(--background);
+            font-family: Tahoma, sans-serif;
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        a {
+            color: var(--cream);
+        }
+
+        a:hover {
+            color: #e0b98f;
+        }
+
+        header {
+            padding: 48px 20px 36px;
+            text-align: center;
+            background: var(--surface);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .eyebrow {
+            margin: 0 0 12px;
+            color: var(--copper);
+            font-size: 14px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--cream);
+            font-size: clamp(38px, 7vw, 58px);
+            line-height: 1.5;
+        }
+
+        header > p:not(.eyebrow) {
+            margin: 8px 0 0;
+            color: var(--muted);
+            font-size: 17px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px 22px;
+            margin-top: 26px;
+        }
+
+        nav a {
+            padding: 4px 0;
+            color: var(--muted);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: var(--cream);
+            border-bottom-color: var(--copper);
+        }
+
+        main {
+            width: min(100% - 40px, 780px);
+            margin: 0 auto;
+            padding: 30px 0 60px;
+        }
+
+        section {
+            padding: 34px 0;
+            border-bottom: 1px solid var(--line);
+            scroll-margin-top: 20px;
+        }
+
+        section:first-child {
+            padding-top: 20px;
+        }
+
+        h2 {
+            margin: 0 0 18px;
+            color: var(--cream);
+            font-size: clamp(25px, 4vw, 32px);
+            line-height: 1.7;
+        }
+
+        h3 {
+            margin: 24px 0 8px;
+            color: #e0b98f;
+            font-size: 21px;
+            line-height: 1.7;
+        }
+
+        p {
+            margin: 12px 0 18px;
+            color: var(--muted);
+            font-size: 18px;
+            line-height: 2.15;
+        }
+
+        .opening {
+            padding-right: 22px;
+            border-right: 3px solid var(--copper);
+        }
+
+        .opening p {
+            color: var(--cream);
+            font-size: 20px;
+        }
+
+        .essay-part {
+            margin-top: 28px;
+        }
+
+        .essay-part p {
+            max-width: 72ch;
+        }
+
+        .questions {
+            margin: 20px 0 0;
+            padding-right: 28px;
+            color: var(--muted);
+        }
+
+        .questions li {
+            margin: 14px 0;
+            padding-right: 8px;
+        }
+
+        .closing-note {
+            margin-top: 32px;
+            padding: 20px 24px;
+            color: var(--cream);
+            background: var(--surface-light);
+            border-right: 3px solid var(--copper);
+        }
+
+        .closing-note p {
+            margin: 0;
+            color: var(--cream);
+        }
+
+        footer {
+            padding: 22px 20px;
+            text-align: center;
+            color: var(--muted);
+            background: #140e0b;
+            border-top: 1px solid var(--line);
+            font-size: 15px;
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--copper);
+            outline-offset: 4px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                font-size: 17px;
+            }
+
+            header {
+                padding: 36px 18px 28px;
+            }
+
+            main {
+                width: min(100% - 32px, 780px);
+                padding-top: 20px;
+            }
+
+            section {
+                padding: 26px 0;
+            }
+
+            p {
+                font-size: 17px;
+            }
+
+            .opening p {
+                font-size: 18px;
+            }
+
+            .opening {
+                padding-right: 16px;
+            }
+
+            .closing-note {
+                padding: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p class="eyebrow">یادداشتی دربارهٔ آموزش، قدرت و اختیار</p>
+        <h1>فصل ناتمام آموختن</h1>
+        <p>پرسشی دربارهٔ اینکه چه کسی حق دارد مرزهای دانستن را تعیین کند</p>
+
+        <nav aria-label="بخش‌های نوشته">
+            <a href="#beginning">آموزش و اختیار</a>
+            <a href="#authority">حدود اندیشه</a>
+            <a href="#accountability">پاسخ‌گویی قدرت</a>
+            <a href="#questions">پرسش‌های پایانی</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="beginning" aria-labelledby="beginning-title">
+            <p class="eyebrow">آغاز بحث</p>
+            <h2 id="beginning-title">آموزش فقط آموختنِ پاسخ‌ها نیست</h2>
+
+            <div class="opening">
+                <p>
+                    آموزش، تمرینِ پرسیدن و سنجیدن است: اینکه یک ادعا بر
+                    چه دلیلی تکیه دارد، چه کسی از آن اثر می‌پذیرد و کدام
+                    صدا در شکل‌دادن به آن غایب مانده است. از همین رو،
+                    محروم‌کردن زنان از آموزش را نمی‌توان تنها تغییری در
+                    برنامهٔ درسی دانست؛ این تصمیم بر امکان اندیشیدن،
+                    انتخاب‌کردن و حضور در زندگی اجتماعی اثر می‌گذارد.
+                </p>
+            </div>
+
+            <p>
+                مکاتب و دانشگاه ها فضایی‌اند که در آن فرد با دیدگاه‌های دیگر روبه‌رو
+                می‌شود، باورهای خود را می‌سنجد و زبان بیان تجربه‌اش را
+                پیدا می‌کند. وقتی این فضا از کسی گرفته می‌شود، پیامد
+                آن از دیوارهای صنف بیرون می‌رود.
+            </p>
+        </section>
+
+        <section id="authority" aria-labelledby="authority-title">
+            <p class="eyebrow">بخش نخست</p>
+            <h2 id="authority-title">چه کسی صلاحیت تعیین حدود اندیشه را دارد؟</h2>
+
+            <article class="essay-part">
+                <p>
+                    هر قدرتی که برای خود حق تعیین حدود آموزش زنان را
+                    قائل می‌شود، باید به پرسشی بنیادی پاسخ دهد: بر چه
+                    اساسی اختیار فکری یک انسان را به موضوع تصمیم‌گیری
+                    دیگری تبدیل کرده است؟ زن، همچون هر انسان دیگری،
+                    صاحب عقل، اراده و حق داوری دربارهٔ زندگی خویش است.
+                </p>
+
+                <p>
+                    سلب امکان آموزش، مداخله‌ای در شکل‌گیری این توانایی‌هاست.
+                    پیامد آن به انتخاب رشته یا دسترسی به شغل محدود نمی‌ماند؛
+                    بر استقلال فرد و امکان مشارکت او در تصمیم‌هایی اثر
+                    می‌گذارد که زندگی خودش را شکل می‌دهند.
+                </p>
+
+                <p>
+                    ادعای ضرورت چنین محدودیتی به دلایلی نیاز دارد که بتوان
+                    آن‌ها را علناً بررسی و نقد کرد. اقتدار به‌خودی‌خود
+                    دلیل اخلاقی نیست؛ قدرت تصمیم‌گیری دربارهٔ زندگی دیگران،
+                    بدون توجیهی قابل‌دفاع، حق مشروع ایجاد نمی‌کند.
+                </p>
+            </article>
+        </section>
+
+        <section id="accountability" aria-labelledby="accountability-title">
+            <p class="eyebrow">بخش دوم</p>
+            <h2 id="accountability-title">وقتی قدرت از پاسخ‌گویی معاف می‌شود</h2>
+
+            <article class="essay-part">
+                <p>
+                    آموزش امکان بررسی ادعاها، تشخیص تناقض‌ها و سنجیدن
+                    دلایلی را فراهم می‌کند که قوانین و هنجارهای اجتماعی
+                    بر آن‌ها تکیه دارند. محدودکردن این امکان، فضای نقد
+                    را کوچک‌تر و تثبیت اقتدار بدون پاسخ‌گویی را آسان‌تر
+                    می‌کند.
+                </p>
+
+                <p>
+                    اگر پرسش از مبانی یک نظام فکری مجاز نباشد، باید پرسید
+                    چه چیزی در معرض خطر قرار گرفته است: حقیقت، نظم اجتماعی
+                    یا موقعیت کسانی که از نظم موجود سود می‌برند؟ پاسخ به
+                    این پرسش نیازمند بررسی شواهد و مناسبات واقعی قدرت است.
+                </p>
+
+                <p>
+                    هیچ نهادی نباید فقط با تکیه بر جایگاه خود، حق نقدشدن
+                    را از دیگران سلب کند. پاسخ‌گویی زمانی معنا دارد که
+                    ادعاها و تصمیم‌ها بتوانند در برابر پرسش و بررسی
+                    عمومی قرار گیرند.
+                </p>
+            </article>
+        </section>
+
+        <section id="questions" aria-labelledby="questions-title">
+            <p class="eyebrow">برای ادامهٔ اندیشیدن</p>
+            <h2 id="questions-title">سه پرسش که نباید کنار گذاشت</h2>
+
+            <ol class="questions">
+                <li>
+                    یک محدودیت بر چه دلیلی استوار است و آیا آن دلیل
+                    در برابر نقد عمومی دوام می‌آورد؟
+                </li>
+                <li>
+                    کسانی که بیشترین اثر را از یک تصمیم می‌پذیرند،
+                    چه فرصتی برای بیان تجربه و دیدگاه خود دارند؟
+                </li>
+                <li>
+                    وقتی امکان آموزش از فردی گرفته می‌شود، چه کسی
+                    مسئول پیامدهای آن بر زندگی او و جامعه است؟
+                </li>
+            </ol>
+
+            <aside class="closing-note">
+                <p>
+                    پرسیدن این‌ها پایان گفت‌وگو نیست؛ آغازِ بررسی دقیق‌تر
+                    ادعاها، پیامدها و حق انسان‌ها برای ساختن زندگی خویش است.
+                </p>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>فصل ناتمام آموختن | یادداشتی دربارهٔ آموزش و خودمختاری</p>
+    </footer>
+</body>
+</html>
